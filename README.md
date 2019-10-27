@@ -45,7 +45,7 @@ Finally, to enrich our data, we may use other public and small (< 5 MB) datasets
   * Draw further conclusions with respect to the financial status of a given community. 
 
 
-# Questions for TAa
+# Questions for TAs
 
 - What librairies could be useful for the creation of a map?
 - Are the project ambitious enough/too ambitious?
