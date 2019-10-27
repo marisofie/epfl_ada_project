@@ -20,7 +20,7 @@ We may also be attentive to the financial status of the communities and check if
 
 The main dataset that we will use is an open dataset hosted by the city of Chicago: (<a href = "https://kaggle.com/chicago/chicago-food-inspections"> Food inspections Chicago</a>). The file has a size of 220 MB and contains the results of several food inspections conducted by the city within different food facilities (restaurants, groceries, and others) between January 1, 2010 and today. Other informations includes institution-specific data (Legal name, license number, address), their risk of altering public health from a nutritional point of view, or the type of violation(s) committed during the different inspections.
 
-Another dataset of interest that we plan to use contains different health indicators (cancer, diabetes,..) as well as some economic status for the different community areas in Chicago: (<a href = "https://data.cityofchicago.org/Health-Human-Services/Public-Health-Statistics-Selected-public-health-in/iqnk-2tcu/data"> Public Health Statistics</a>). In order to merge the different datasets, we will use another dataset of 2 MB that maps the different community areas according to their geographical location: (<a href = "https://data.cityofchicago.org/dataset/Community-Areas/vrxf-vc4k/data?fbclid=IwAR2YiR_0kgW1s0iSrKFti5LXmy7zTqQDQqDpFGdaTQ92jS-TYA0gDsU5LzU" > Community Area Dataset </a>).
+Another dataset of interest that we plan to use contains different health indicators (cancer, diabetes,..) as well as some economic status for the different community areas in Chicago: <a href = "https://data.cityofchicago.org/Health-Human-Services/Public-Health-Statistics-Selected-public-health-in/iqnk-2tcu/data"> Public Health Statistics</a>. In order to merge the different datasets, we will use another dataset of 2 MB that maps the different community areas according to their geographical location: <a href = "https://data.cityofchicago.org/dataset/Community-Areas/vrxf-vc4k/data?fbclid=IwAR2YiR_0kgW1s0iSrKFti5LXmy7zTqQDQqDpFGdaTQ92jS-TYA0gDsU5LzU" > Community Area Dataset </a>.
     
 Finally, to enrich our data, we may use other public and small (< 5 MB) datasets available for the city of Chicago (<a href = "https://www.chicagohealthatlas.org"> Chicago Health Atlas</a>): 
   - Diabetes 
@@ -29,23 +29,26 @@ Finally, to enrich our data, we may use other public and small (< 5 MB) datasets
   - Wealth/ Income of the community
 
 
-# A list of internal milestones up until project milestone 2
-Add here a sketch of your planning for the next project milestone.
+# List of internal milestones up until project milestone 2
 
-Task 0 : Data wrangling and exploring. Plot visual graphs in order to look for potential outliers, duplicates and missing values. (deadline = 30.10)
+### Task 0 : Data wrangling and exploring (deadline = 30.10) 
+  * Plot visual graphs in order to look for potential outliers, duplicates and missing values. 
 
-Task 1 : Analyzing the following : 
-    - relationship between the health risk level and the localisation of the facilities
-    - relationship between the inspection results and the localisation of the facilities 
-    (deadline = 7.11)
+### Task 1 : Mapping food inspection indicators (deadline = 7.11)
+  * relationship between the health risk level and the localisation of the facilities
+  * relationship between the inspection results and the localisation of the facilities 
+    
 
-Task 2 : Introducing other datasets regarding the health conditions throughout Chicago to the project. Finding correlations between the food insecurity of each community and the sickness rates.
-(deadline = 14.11)
+### Task 2 : Introducing datasets and finding correlations (deadline = 14.11)
+  * Introducing other datasets regarding the health conditions throughout Chicago to the project 
+  * Finding correlations between the food insecurity of each community and the sickness rates.
 
-Task 3 : Proving statistically whether or not the food insecurity is causing health problems such as obesity, diabetes and alcoholism. Draw further conclusions with respect to the financial status of a given community. (deadline = 28.11)
+
+### Task 3 : Discussion and Conclusions (deadline = 28.11)
+  * Proving statistically whether or not the food insecurity is causing health problems such as obesity, diabetes and alcoholism. 
+  * Draw further conclusions with respect to the financial status of a given community. 
 
 # Questions for TAa
-Add here some questions you have for us, in general or project-specific.
 
 - What librairies could be useful for the creation of a map ?
 - Are the problematics ambitious enough / too ambitious ?
