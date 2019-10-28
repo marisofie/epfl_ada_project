@@ -50,3 +50,7 @@ Finally, to enhance our data, we may use other public and small (< 5 MB) dataset
 - What librairies could be useful for the creation of a map?
 - Is the project ambitious enough or too ambitious?
 - Are the research questions relevant enough?
+- There are empty columns in the provided data. Must we take further notice to this or simply delete the empty columns ?
+
+
+
