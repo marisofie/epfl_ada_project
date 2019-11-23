@@ -3,8 +3,8 @@
 ***_______________ UPDATED VERSION _______________ ***
 
 ## Abstract
-In this project, our interest is focused on food inspections and the different violations with regards to the outcome of the inspection. In addition, we explore relations to food poisoning and economic status. A dataset providing information on the food inspections made from 01.01.2010 to the present, will be carefully studied. In addition we will look at data taken from a website with reports of food poisoning in Chicaco ([I was poisoned])(https://iwaspoisoned.com/location/united-states/illinois/chicago#botpress). 
-> Last year, Foodborne Chicago classified over 2,600 tweets related to food poisoning in Chicago which led to 233 food poisoning reports submitted to CDPH. From those reports an additional 150 restaurant and food service inspections occurred ([City of Chicago])(https://www.chicago.gov/city/en/depts/cdph/provdrs/healthy_communities/news/2014/apr/one-year-after-launch--foodborne-chicago-continues-to-enhance-fo.html). 
+In this project, our interest is focused on food inspections and the different violations with regards to the outcome of the inspection. In addition, we explore relations to food poisoning and economic status. A dataset providing information on the food inspections made from 01.01.2010 to the present, will be carefully studied. In addition we will look at data taken from a website with reports of food poisoning in Chicaco ([I was poisoned](https://iwaspoisoned.com/location/united-states/illinois/chicago#botpress)). 
+> Last year, Foodborne Chicago classified over 2,600 tweets related to food poisoning in Chicago which led to 233 food poisoning reports submitted to CDPH. From those reports an additional 150 restaurant and food service inspections occurred ([City of Chicago](https://www.chicago.gov/city/en/depts/cdph/provdrs/healthy_communities/news/2014/apr/one-year-after-launch--foodborne-chicago-continues-to-enhance-fo.html)). 
 
 Food poisoning is a health issue, and it is important to classify where they happen and take the right actions to ensure that it does not happen in the future. We will therefore explore if it is possible to predict if a facility can cause you food poisoning and also look at the financial status of the area to see if these factors also have an impact.
 
@@ -16,9 +16,9 @@ Food poisoning is a health issue, and it is important to classify where they hap
 - Is there a correlation between financial status of an area and the reports of food poisoning?
 
 ## Dataset
-The main dataset that we will use is open-sourced and hosted by the city of Chicago ([Food inspections Chicago])( https://kaggle.com/chicago/chicago-food-inspections). The file has a size of 220 MB and contains the results of several food inspections conducted by the city within different food facilities (restaurants, groceries, and others) between January 1, 2010 and today. Other information that can be found includes institution-specific data (legal name, license number, address), their risk of altering public health from a nutritional point of view, and the type of violation(s) committed during the different inspections.
+The main dataset that we will use is open-sourced and hosted by the city of Chicago ([Food inspections Chicago]( https://kaggle.com/chicago/chicago-food-inspections)). The file has a size of 220 MB and contains the results of several food inspections conducted by the city within different food facilities (restaurants, groceries, and others) between January 1, 2010 and today. Other information that can be found includes institution-specific data (legal name, license number, address), their risk of altering public health from a nutritional point of view, and the type of violation(s) committed during the different inspections.
 
-Other data of interest is the reports of food poisoning from ([I was poisoned])(https://iwaspoisoned.com/location/united-states/illinois/chicago#botpress). We will collect this data using webscrapping. **(SIZE?)**
+Other data of interest is the reports of food poisoning from ([I was poisoned](https://iwaspoisoned.com/location/united-states/illinois/chicago#botpress)). We will collect this data using webscrapping. **(SIZE?)**
 
 
 **ARE WE STILL USING THE PUBLIC HEALTH DATASET?**
