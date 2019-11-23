@@ -1,5 +1,13 @@
 # Food Safety in Chicago with Respect to Public Health
 
+**------------------ UPDATED VERSION ------------------ **
+
+## Abstract
+In this project, our interest is focused on food inspections and the different violations with regards to the outcome of the inspection. In addition, we explore relations to food poisoning and economic status. A dataset providing information on the food inspections made from 01.01.2010 to the present, will be carefully studied. In addition we will look at data taken from a website with reports of food poisoning in Chicaco [I was poisoned](https://iwaspoisoned.com/location/united-states/illinois/chicago#botpress). 
+> Last year, Foodborne Chicago classified over 2,600 tweets related to food poisoning in Chicago which led to 233 food poisoning reports submitted to CDPH. From those reports an additional 150 restaurant and food service inspections occurred. [City of Chicago](https://www.chicago.gov/city/en/depts/cdph/provdrs/healthy_communities/news/2014/apr/one-year-after-launch--foodborne-chicago-continues-to-enhance-fo.html)
+
+Food poisoning is a health issue, and it is important to classify where they happen and take the right actions to ensure that it does not happen in the future. We will therefore explore if it is possible to predict if a facility can cause you food poisoning and also look at the status of the area to see if these factors are also contributing factors. 
+
 
 # Abstract
 
