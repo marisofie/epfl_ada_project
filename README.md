@@ -2,7 +2,9 @@
 
 ***<center> UPDATED VERSION </center>***
 
-*When exploring the data in detail we realised that we can link the violations with regards to hygiene and not food quality. It is therefore difficult to relate the food inspections with long-term health issues (diabetes, obesity, etc...), thus we decided to focus on food poisoning because we found that it is most likely linked with the violations described in our main dataset. We then changed the project accordingly, and are therefore focusing on the relationship between food inspections and food poisoning, and will also look at the effect of financial status and sanitation conditions. *
+*When exploring the data in detail we realised that we can link the violations with regards to hygiene and not food quality. It is therefore difficult to relate the food inspections with long-term health issues (diabetes, obesity, etc...), thus we decided to focus on food poisoning because we found that it is most likely linked with the violations described in our main dataset. We then changed the project accordingly, and are therefore focusing on the relationship between food inspections and food poisoning, and will also look at the effect of financial status and sanitation conditions.*
+
+
 
 ## Abstract
 In this project, our interest is focused on food inspections and the different violations with regards to the outcome of the inspection. In addition, we explore relations to food poisoning and economic status. A dataset providing information on the food inspections made from 01.01.2010 to the present, will be carefully studied. In addition we will look at data taken from a website with reports of food poisoning in Chicaco ([I was poisoned](https://iwaspoisoned.com/location/united-states/illinois/chicago#botpress)). 
