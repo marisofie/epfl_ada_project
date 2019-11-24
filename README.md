@@ -71,7 +71,7 @@ Sanitation in the streets could also have an impact on the restaurant's hygiene.
 
 *** ____________MILESTONE 1____________ ***
 
-
+<span style=“color:green;”>
 ## Abstract
 
 In this project, our interest is focused on the access to nutritionally adequate and safe food in different parts of Chicago and the impact on the local population's health. A dataset providing information on the food inspections made from 01.01.2010 to the present, will be carefully studied. Our first goal is to quantify the availability of safe food in each community based on the results from the food inspections. 
@@ -122,5 +122,5 @@ Finally, to enhance our data, we may use other public and small (< 5 MB) dataset
 - Is the project ambitious enough or too ambitious?
 - Are the research questions relevant enough?
 - There are empty columns in the provided data. Must we take further notice to this or simply delete the empty columns ?
-
+</span>
 
