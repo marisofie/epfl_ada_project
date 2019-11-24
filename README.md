@@ -6,7 +6,7 @@
 
 ##Data Preprocessing and Structuring : 
 
-Cleaning data: Cleansing the data frame and exporting the data in a csv file : clean_data.csv
+Cleaning data [here](data_cleaning.ipynb): Cleansing the data frame and exporting the data in a csv file : clean_data.csv
 
 class violation_preprocessing : based on the official website (https://webapps1.chicago.gov/healthinspection/Code_Violations.jsp) we decided to translate the column into a more conveniant form. The values were categorised according to the gravity of the violation.
 
@@ -75,7 +75,7 @@ Sanitation in the streets could also have an impact on the restaurant's hygiene.
 
 *** ____________MILESTONE 1____________ ***
 
-<font color=red>
+
 ## Abstract
 
 In this project, our interest is focused on the access to nutritionally adequate and safe food in different parts of Chicago and the impact on the local population's health. A dataset providing information on the food inspections made from 01.01.2010 to the present, will be carefully studied. Our first goal is to quantify the availability of safe food in each community based on the results from the food inspections. 
@@ -126,5 +126,5 @@ Finally, to enhance our data, we may use other public and small (< 5 MB) dataset
 - Is the project ambitious enough or too ambitious?
 - Are the research questions relevant enough?
 - There are empty columns in the provided data. Must we take further notice to this or simply delete the empty columns ?
-</font>
+
 
