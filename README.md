@@ -4,21 +4,19 @@
 
 *While exploring the data, we realised that the violations are linked to the hygiene of the facility rather than to the quality of the food (nutriment wise). It is therefore difficult to relate the food inspection results with long-term health issues (diabetes, obesity, etc...). From now on, we shall focus on the food poisoning since it is likely to be linked to the violations described in our main dataset.*
 
-##Data Preprocessing and Structuring : 
+## Data Preprocessing and Structuring : 
 
-Cleaning data [here](data_cleaning.ipynb): Cleansing the data frame and exporting the data in a csv file : clean_data.csv
+[Cleaning data](data_cleaning.ipynb): Cleansing the data frame and exporting the data in a csv file : clean_data.csv
 
-class violation_preprocessing : based on the official website (https://webapps1.chicago.gov/healthinspection/Code_Violations.jsp) we decided to translate the column into a more conveniant form. The values were categorised according to the gravity of the violation.
+[mapping_data](mapping_data.ipynb): Creating maps that illustrate the values of different caracteristics per zip code.  
 
-mapping_data: Creating maps that illustrate the values of different caracteristics per zip code.  
+class [violation_preprocessing](violation_preprocessing.py) : based on the official website [Code Violations](https://webapps1.chicago.gov/healthinspection/Code_Violations.jsp) we decided to translate the column into a more conveniant form. The values were categorised according to the gravity of the violation.
 
-poisoning_violations_factors: The violation factors that are most likely to provoque food poisoning have been found. The frequency of different violation between all inspection types (not necessarily related to food poisoning) were compared to the inspection in food poisoning cases.
+[poisoning_violations_factors](poisoning_violations_factors.ipynb): The violation factors that are most likely to provoque food poisoning have been found. The frequency of different violation between all inspection types (not necessarily related to food poisoning) were compared to the inspection in food poisoning cases.
 
-Machine_Learning : Predicting inspection results for further analysis of food poisoning, predicting the inspection types (food poisoning based on the violations, inspection results, zip code of the facility and the risk level). 
+[Machine_Learning](Machine_Learning.ipynb) : Predicting inspection results for further analysis of food poisoning, predicting the inspection types (food poisoning based on the violations, inspection results, zip code of the facility and the risk level). 
 
-Webscraping website: Takes in the information from https://iwaspoisoned.com/location/united-states/illinois/chicago#botpress and stores a data in a csv file (Foodpoisoning.csv).
-
-
+[Webscraping website](Webscraping_website.ipynb): Takes in the information from [I was poisoned](https://iwaspoisoned.com/location/united-states/illinois/chicago#botpress) and stores a data in a csv file (Foodpoisoning.csv).
 
 
 ## Abstract
@@ -30,9 +28,7 @@ Each of our datasets give insight on what could potentially contribute to food p
 It has been noticed that many risky facilities are located by the seaside, which coincides with the presence of Ecoli coming from beaches. We shall furtherly investigate the correlation between Ecoli on the beaches and the food safety in facilities near the beaches thanks to another dataset that was found.
 
 Another dataset including reports of food poisoning in Chicaco by citizens :
-([I was poisoned (https://iwaspoisoned.com/location/united-states/illinois/chicago#botpress)) 
-
-will be used to target the facilities that cause complaints. 
+([I was poisoned](https://iwaspoisoned.com/location/united-states/illinois/chicago#botpress)) will be used to target the facilities that cause complaints. 
 
 Once all the factors that contribute to food poisoning are found, we may consider using machine learning. Machine Learning enables us to provide a predictive method to know which facility is more likely to cause a sickness by establishing the corresponding coefficients (that illustrates how important the factor is) mathematically.
 
@@ -52,7 +48,7 @@ Another data of interest ([I was poisoned](https://iwaspoisoned.com/location/uni
 
 It has been observed that the most frequent cases of food poisoning occurs near the seaside. To broaden our research, we have chosen to study another dataset "beach-e.-coli-predictions.csv" (373.53 KB). It shows predicted E. coli levels based on an experimental analytical modeling approach.
 
-Sanitation in the streets could also have an impact on the restaurant's hygiene. To explore this hypothesis, a dataset called sanitation.csv (from the website https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Sanitation-Code-Complaints-Hi/me59-5fac, 34.4 Mo) has been introduced. Hopefully, this could give an extra explanation on why some facilities are less hygienic than others.
+Sanitation in the streets could also have an impact on the restaurant's hygiene. To explore this hypothesis, a dataset called sanitation.csv (from the website ([City Of Chicago](https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Sanitation-Code-Complaints-Hi/me59-5fac), 34.4 Mo) has been introduced. Hopefully, this could give an extra explanation on why some facilities are less hygienic than others.
 
 
 
