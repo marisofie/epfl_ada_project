@@ -69,7 +69,8 @@ Sanitation in the streets could also have an impact on the restaurant's hygiene.
 - Are the statistical methods applied in the Machine Learning part enough for the predictions?
 
 
-***<center> MILESTONE 1 </center>***
+
+# ***<center> MILESTONE 1 </center>***
 
 ## *Abstract*
 
