@@ -58,7 +58,7 @@ Sanitation in the streets could also have an impact on the restaurant's hygiene.
 - Establish the statistical relations to mathematically prove the impact of the main factors on food poisoning.
 - Find the features that could help predict the food poisoning in the most accurate way.
 - Obtaining more information on the complaints made by civilians on the restaurants that caused food poisoning and comparing them with our previous results.
-- Create a score that takes into account all the factors that contribute to food safety
+- Create a score that takes into account all the factors that contribute to food safety and test its workability on real poisoning complaint from [I was poisoned](https://iwaspoisoned.com/location/united-states/illinois/chicago#botpress).
 - Clean and homogenise the code
 - Write a report that combines the previous analysis on the food inspections in Chicago.
 - Write a data story
