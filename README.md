@@ -6,19 +6,19 @@
 
 *While exploring the data, we realised that the violations are linked to the hygiene of the facility rather than to the quality of the food (nutriment wise). It is therefore difficult to relate the food inspection results with long-term health issues (diabetes, obesity, etc...). From now on, we shall focus on the food poisoning since it is likely to be linked to the violations described in our main dataset.*
 
-## Data Preprocessing and Structuring : 
+## Data Structuring : 
 
-[Cleaning data](data_cleaning.ipynb): Cleansing the data frame and exporting the data in a csv file : clean_data.csv
+- [Cleaning data](data_cleaning.ipynb): Cleansing the data frame and exporting the data in a csv file : clean_data.csv
 
-[mapping_data](mapping_data.ipynb): Creating maps that illustrate the values of different caracteristics per zip code.  
+- [mapping_data](mapping_data.ipynb): Creating maps that illustrate the values of different caracteristics per zip code.  
 
-class [violation_preprocessing](violation_preprocessing.py) : based on the official website [Code Violations](https://webapps1.chicago.gov/healthinspection/Code_Violations.jsp) we decided to translate the column into a more conveniant form. The values were categorised according to the gravity of the violation.
+- class [violation_preprocessing](violation_preprocessing.py) : based on the official website [Code Violations](https://webapps1.chicago.gov/healthinspection/Code_Violations.jsp) we decided to translate the *violations* column into a more conveniant form. The values were categorised according to the gravity of the violation.
 
-[poisoning_violations_factors](poisoning_violations_factors.ipynb): The violation factors that are most likely to provoque food poisoning have been found. The frequency of different violation between all inspection types (not necessarily related to food poisoning) were compared to the inspection in food poisoning cases.
+- [poisoning_violations_factors](poisoning_violations_factors.ipynb): The violation factors that are most likely to provoque food poisoning have been found. The frequency of different violation between all inspection types (not necessarily related to food poisoning) were compared to the inspection in food poisoning cases.
 
-[Machine_Learning](Machine_Learning.ipynb) : Predicting inspection results for further analysis of food poisoning, predicting the inspection types (food poisoning based on the violations, inspection results, zip code of the facility and the risk level). 
+- [Machine_Learning](Machine_Learning.ipynb) : Predicting inspection results for further analysis of food poisoning, predicting the inspection types (food poisoning based on the violations, inspection results, zip code of the facility and the risk level). 
 
-[Webscraping_website](Webscraping_website.ipynb): Takes in the information from [I was poisoned](https://iwaspoisoned.com/location/united-states/illinois/chicago#botpress) and stores a data in a csv file (Foodpoisoning.csv).
+- [Webscraping_website](Webscraping_website.ipynb): Takes in the information from [I was poisoned](https://iwaspoisoned.com/location/united-states/illinois/chicago#botpress) and stores a data in a csv file (Foodpoisoning.csv).
 
 
 ## Abstract
