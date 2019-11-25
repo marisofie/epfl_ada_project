@@ -16,7 +16,7 @@
 
 - [poisoning_violations_factors](poisoning_violations_factors.ipynb): The violation factors that are most likely to provoque food poisoning have been found. The frequency of different violation between all inspection types (not necessarily related to food poisoning) were compared to the inspection in food poisoning cases.
 
-- [Machine_Learning](Machine_Learning.ipynb) : Predicting inspection results for further analysis of food poisoning, predicting the inspection types (food poisoning based on the violations, inspection results, zip code of the facility and the risk level). 
+- [machine_learning](machine_learning.ipynb) : Predicting inspection results for further analysis of food poisoning, predicting the inspection types (food poisoning based on the violations, inspection results, zip code of the facility and the risk level). 
 
 - [Webscraping_website](Webscraping_website.ipynb): Takes in the information from [I was poisoned](https://iwaspoisoned.com/location/united-states/illinois/chicago#botpress) and stores a data in a csv file (Foodpoisoning.csv).
 
