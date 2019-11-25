@@ -8,7 +8,7 @@
 
 ## Data Structuring : 
 
-- [main_file](main_file_milestone2.ipynb): We regrouped all the important informations in this file for milestone2. This file is a merged version of the files above ( excepted the [Cleaning data](data_cleaning.ipynb) file and the [Webscraping_website](Webscraping_website.ipynb)).
+- [main_file](main_file_milestone2.ipynb): We regrouped all the important information in this file for **milestone 2**. This file is a merged version of the files below ( excepted the [Cleaning data](data_cleaning.ipynb) file and the [Webscraping_website](Webscraping_website.ipynb)).
 
 - [Cleaning data](data_cleaning.ipynb): Cleansing the data frame and exporting the data in a csv file : clean_data.csv
 
