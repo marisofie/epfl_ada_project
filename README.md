@@ -1,4 +1,4 @@
-                                     ***<center> UPDATED VERSION </center>***
+                                             --- UPDATED VERSION ---
 
 
 # Food Inspections in Chicago with Respect to Food Poisoning
