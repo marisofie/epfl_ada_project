@@ -8,6 +8,8 @@
 
 ## Data Structuring : 
 
+- [main_file](main_file_milestone2.ipynb): We regrouped all the important informations in this file for milestone2. This file is a merged version of the files above ( excepted the [Cleaning data](data_cleaning.ipynb) file and the [Webscraping_website](Webscraping_website.ipynb)).
+
 - [Cleaning data](data_cleaning.ipynb): Cleansing the data frame and exporting the data in a csv file : clean_data.csv
 
 - [mapping_data](mapping_data.ipynb): Creating maps that illustrate the values of different caracteristics per zip code.  
