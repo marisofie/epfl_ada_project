@@ -76,7 +76,7 @@ Sanitation in the streets could also have an impact on the restaurant's hygiene.
 
 
 
-                                               ---  MILESTONE 1 ---
+                                             ---  MILESTONE 1 ---
 
 ### *Abstract*
 
