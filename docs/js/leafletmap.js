@@ -3,17 +3,13 @@ window.onload = function () {
 		attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
 	});
 
-  $("#map").ready(function() {
-    $.getJSON("/maps/Boundaries-ZIPCodes.geojson", function(data) {
-      var geojson = L.geoJSON(data, {
-        onEachFeature: function (feature, layer) {
-          layer.bindPopup(feature.properties.Area_Name);
-        }
-      });
+  $.getJSON("/maps/Boundaries-ZIPCodes.geojson", function(data) {
+    var geojson = L.geoJSON(data, {
+      onEachFeature: function (feature, layer) {
+        layer.bindPopup(feature.properties.Area_Name);
+      }
   });
   
-
-
     var map = L.map('map')
     .fitBounds(geojson.getBounds());
 
