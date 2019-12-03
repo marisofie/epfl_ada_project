@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7bfbbc02ef4e4aae9789bb04da82047b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7bfbbc02ef4e4aae9789bb04da82047b" ></div>
+        
+</body>
+<script>    
+    
+            var map_7bfbbc02ef4e4aae9789bb04da82047b = L.map(
+                "map_7bfbbc02ef4e4aae9789bb04da82047b",
+                {
+                    center: [41.86, -87.6298],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2d531e3ecf11484cb2f8d3998edb3547 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7bfbbc02ef4e4aae9789bb04da82047b);
+        
+    
+            var marker_1f214fa0348d484f8dc8d273f7463ca8 = L.marker(
+                [41.8638, -87.6082],
+                {}
+            ).addTo(map_7bfbbc02ef4e4aae9789bb04da82047b);
+        
+    
+            var icon_7185c24464e347d4b350bb96c9e9da9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1f214fa0348d484f8dc8d273f7463ca8.setIcon(icon_7185c24464e347d4b350bb96c9e9da9f);
+        
+    
+        var popup_cd20a56047854db9bf3eb7a5acba6bca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ffe2e43bb74345589a71a52e061294c9 = $(`<div id="html_ffe2e43bb74345589a71a52e061294c9" style="width: 100.0%; height: 100.0%;">12th Street #High measure count :47</div>`)[0];
+            popup_cd20a56047854db9bf3eb7a5acba6bca.setContent(html_ffe2e43bb74345589a71a52e061294c9);
+        
+
+        marker_1f214fa0348d484f8dc8d273f7463ca8.bindPopup(popup_cd20a56047854db9bf3eb7a5acba6bca)
+        ;
+
+        
+    
+    
+            var marker_57d039e5a55f42448450c7454ab67de5 = L.marker(
+                [41.7911, -87.5797],
+                {}
+            ).addTo(map_7bfbbc02ef4e4aae9789bb04da82047b);
+        
+    
+            var icon_ae978b9add0843afa21787b7fa9b425d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_57d039e5a55f42448450c7454ab67de5.setIcon(icon_ae978b9add0843afa21787b7fa9b425d);
+        
+    
+        var popup_d71134cc74ae4a7281df7bf9833816f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d1d82c1bc3944619e6225d32c02c8f0 = $(`<div id="html_9d1d82c1bc3944619e6225d32c02c8f0" style="width: 100.0%; height: 100.0%;">57th Street #High measure count :9</div>`)[0];
+            popup_d71134cc74ae4a7281df7bf9833816f5.setContent(html_9d1d82c1bc3944619e6225d32c02c8f0);
+        
+
+        marker_57d039e5a55f42448450c7454ab67de5.bindPopup(popup_d71134cc74ae4a7281df7bf9833816f5)
+        ;
+
+        
+    
+    
+            var marker_35078f09b665435182242133d3e95e3e = L.marker(
+                [41.9785, -87.6515],
+                {}
+            ).addTo(map_7bfbbc02ef4e4aae9789bb04da82047b);
+        
+    
+            var icon_8c2dd186bc354d67875b4334525b84c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_35078f09b665435182242133d3e95e3e.setIcon(icon_8c2dd186bc354d67875b4334525b84c1);
+        
+    
+        var popup_724e1986e699416abf553c4d80200570 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e96de0a8836644e6bc1841bb64e053f5 = $(`<div id="html_e96de0a8836644e6bc1841bb64e053f5" style="width: 100.0%; height: 100.0%;">Foster #High measure count :49</div>`)[0];
+            popup_724e1986e699416abf553c4d80200570.setContent(html_e96de0a8836644e6bc1841bb64e053f5);
+        
+
+        marker_35078f09b665435182242133d3e95e3e.bindPopup(popup_724e1986e699416abf553c4d80200570)
+        ;
+
+        
+    
+    
+            var marker_d013b3f95c374f6fa3c9ff596c58c465 = L.marker(
+                [42.0027, -87.6564],
+                {}
+            ).addTo(map_7bfbbc02ef4e4aae9789bb04da82047b);
+        
+    
+            var icon_6d283e403cbb4dcab90a14e8b6f12be6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d013b3f95c374f6fa3c9ff596c58c465.setIcon(icon_6d283e403cbb4dcab90a14e8b6f12be6);
+        
+    
+        var popup_37066a9c55e7433e93dba460490b4e96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24379d4bb8644a02af478261734ee28d = $(`<div id="html_24379d4bb8644a02af478261734ee28d" style="width: 100.0%; height: 100.0%;">Hartigan (Albion) #High measure count :4</div>`)[0];
+            popup_37066a9c55e7433e93dba460490b4e96.setContent(html_24379d4bb8644a02af478261734ee28d);
+        
+
+        marker_d013b3f95c374f6fa3c9ff596c58c465.bindPopup(popup_37066a9c55e7433e93dba460490b4e96)
+        ;
+
+        
+    
+    
+            var marker_67fe1b5a86d4465fb4e191e143065b2b = L.marker(
+                [42.0188, -87.6663],
+                {}
+            ).addTo(map_7bfbbc02ef4e4aae9789bb04da82047b);
+        
+    
+            var icon_f21d7a95c1c443b78801f3551acf1d3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_67fe1b5a86d4465fb4e191e143065b2b.setIcon(icon_f21d7a95c1c443b78801f3551acf1d3e);
+        
+    
+        var popup_b744c5ef905c4937ad2e4e1db4534aee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc2eb33f56d24d76a06416246dac2ac5 = $(`<div id="html_cc2eb33f56d24d76a06416246dac2ac5" style="width: 100.0%; height: 100.0%;">Howard #High measure count :5</div>`)[0];
+            popup_b744c5ef905c4937ad2e4e1db4534aee.setContent(html_cc2eb33f56d24d76a06416246dac2ac5);
+        
+
+        marker_67fe1b5a86d4465fb4e191e143065b2b.bindPopup(popup_b744c5ef905c4937ad2e4e1db4534aee)
+        ;
+
+        
+    
+    
+            var marker_b22b9bd4422d4c8e82a93cf29916a519 = L.marker(
+                [42.0224, -87.6674],
+                {}
+            ).addTo(map_7bfbbc02ef4e4aae9789bb04da82047b);
+        
+    
+            var icon_22c88b2782244f48b292a25039473756 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b22b9bd4422d4c8e82a93cf29916a519.setIcon(icon_22c88b2782244f48b292a25039473756);
+        
+    
+        var popup_98b59b38370249eb8680b5960cbf254b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2bdf3e204fb1486495ba192a3ce9fb60 = $(`<div id="html_2bdf3e204fb1486495ba192a3ce9fb60" style="width: 100.0%; height: 100.0%;">Juneway #High measure count :9</div>`)[0];
+            popup_98b59b38370249eb8680b5960cbf254b.setContent(html_2bdf3e204fb1486495ba192a3ce9fb60);
+        
+
+        marker_b22b9bd4422d4c8e82a93cf29916a519.bindPopup(popup_98b59b38370249eb8680b5960cbf254b)
+        ;
+
+        
+    
+    
+            var marker_5df272260b614f619271f37c102420e9 = L.marker(
+                [42.0131, -87.6635],
+                {}
+            ).addTo(map_7bfbbc02ef4e4aae9789bb04da82047b);
+        
+    
+            var icon_ef9beefde8e440bf9268bad8f4652d10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5df272260b614f619271f37c102420e9.setIcon(icon_ef9beefde8e440bf9268bad8f4652d10);
+        
+    
+        var popup_77791822e5574333a33f65e1204f855f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6fc1e17b3cb34ff8abdafc236682652f = $(`<div id="html_6fc1e17b3cb34ff8abdafc236682652f" style="width: 100.0%; height: 100.0%;">Leone #High measure count :9</div>`)[0];
+            popup_77791822e5574333a33f65e1204f855f.setContent(html_6fc1e17b3cb34ff8abdafc236682652f);
+        
+
+        marker_5df272260b614f619271f37c102420e9.bindPopup(popup_77791822e5574333a33f65e1204f855f)
+        ;
+
+        
+    
+    
+            var marker_26937d9a98154f399ce9cc160d0465dc = L.marker(
+                [41.8393, -87.6072],
+                {}
+            ).addTo(map_7bfbbc02ef4e4aae9789bb04da82047b);
+        
+    
+            var icon_12de1f7d65dc45ec99103a4ccd99cda7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_26937d9a98154f399ce9cc160d0465dc.setIcon(icon_12de1f7d65dc45ec99103a4ccd99cda7);
+        
+    
+        var popup_ca38344a323e467abb70b54009c964f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f2ddc66d9094f6188d74861d33b272b = $(`<div id="html_0f2ddc66d9094f6188d74861d33b272b" style="width: 100.0%; height: 100.0%;">Margaret T Burroughs (31st) #High measure count :72</div>`)[0];
+            popup_ca38344a323e467abb70b54009c964f1.setContent(html_0f2ddc66d9094f6188d74861d33b272b);
+        
+
+        marker_26937d9a98154f399ce9cc160d0465dc.bindPopup(popup_ca38344a323e467abb70b54009c964f1)
+        ;
+
+        
+    
+    
+            var marker_4a9226a66bb74422ab25473eefbddff0 = L.marker(
+                [42.0161, -87.6647],
+                {}
+            ).addTo(map_7bfbbc02ef4e4aae9789bb04da82047b);
+        
+    
+            var icon_ecc636665f9547a1b29da3b79066c9d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4a9226a66bb74422ab25473eefbddff0.setIcon(icon_ecc636665f9547a1b29da3b79066c9d1);
+        
+    
+        var popup_e3a1c25326714be69ff3c1da7ea1c130 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f36f6f497b9340028509edfbc71ab13d = $(`<div id="html_f36f6f497b9340028509edfbc71ab13d" style="width: 100.0%; height: 100.0%;">Marion Mahony Griffin (Jarvis) #High measure count :9</div>`)[0];
+            popup_e3a1c25326714be69ff3c1da7ea1c130.setContent(html_f36f6f497b9340028509edfbc71ab13d);
+        
+
+        marker_4a9226a66bb74422ab25473eefbddff0.bindPopup(popup_e3a1c25326714be69ff3c1da7ea1c130)
+        ;
+
+        
+    
+    
+            var marker_820e28ce9a944ef7a9293c4489dac087 = L.marker(
+                [41.9148, -87.6273],
+                {}
+            ).addTo(map_7bfbbc02ef4e4aae9789bb04da82047b);
+        
+    
+            var icon_b4c8cdaf9c03479ebe85e58cf08471f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_820e28ce9a944ef7a9293c4489dac087.setIcon(icon_b4c8cdaf9c03479ebe85e58cf08471f1);
+        
+    
+        var popup_d788f01883ba4c10962a742fe4d9dce2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a19d0b305ad348b4b0d771b8888e163e = $(`<div id="html_a19d0b305ad348b4b0d771b8888e163e" style="width: 100.0%; height: 100.0%;">North Avenue #High measure count :7</div>`)[0];
+            popup_d788f01883ba4c10962a742fe4d9dce2.setContent(html_a19d0b305ad348b4b0d771b8888e163e);
+        
+
+        marker_820e28ce9a944ef7a9293c4489dac087.bindPopup(popup_d788f01883ba4c10962a742fe4d9dce2)
+        ;
+
+        
+    
+    
+            var marker_f0cf8a0c288e49a5874736f04bd71990 = L.marker(
+                [41.9032, -87.6235],
+                {}
+            ).addTo(map_7bfbbc02ef4e4aae9789bb04da82047b);
+        
+    
+            var icon_29777dd741f24e6fb15d272513500213 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f0cf8a0c288e49a5874736f04bd71990.setIcon(icon_29777dd741f24e6fb15d272513500213);
+        
+    
+        var popup_e1f32f708cf04fcca11c4ce8f3afd0cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cdb458344f0046cda4215e19f7432798 = $(`<div id="html_cdb458344f0046cda4215e19f7432798" style="width: 100.0%; height: 100.0%;">Oak Street #High measure count :5</div>`)[0];
+            popup_e1f32f708cf04fcca11c4ce8f3afd0cd.setContent(html_cdb458344f0046cda4215e19f7432798);
+        
+
+        marker_f0cf8a0c288e49a5874736f04bd71990.bindPopup(popup_e1f32f708cf04fcca11c4ce8f3afd0cd)
+        ;
+
+        
+    
+    
+            var marker_052bcd56360140d793bff947b463e5e0 = L.marker(
+                [41.8211, -87.5976],
+                {}
+            ).addTo(map_7bfbbc02ef4e4aae9789bb04da82047b);
+        
+    
+            var icon_1a4b820cc6234c03abdb556d8ec45dc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_052bcd56360140d793bff947b463e5e0.setIcon(icon_1a4b820cc6234c03abdb556d8ec45dc6);
+        
+    
+        var popup_034af04cbe3844e8918a2b81b7a4af19 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f4475f11790b489dbbacbfaa70c431c8 = $(`<div id="html_f4475f11790b489dbbacbfaa70c431c8" style="width: 100.0%; height: 100.0%;">Oakwood #High measure count :6</div>`)[0];
+            popup_034af04cbe3844e8918a2b81b7a4af19.setContent(html_f4475f11790b489dbbacbfaa70c431c8);
+        
+
+        marker_052bcd56360140d793bff947b463e5e0.bindPopup(popup_034af04cbe3844e8918a2b81b7a4af19)
+        ;
+
+        
+    
+    
+            var marker_1e9ee0ce27b64b8e8e47ede1bbe48a3b = L.marker(
+                [41.8935, -87.6152],
+                {}
+            ).addTo(map_7bfbbc02ef4e4aae9789bb04da82047b);
+        
+    
+            var icon_8fe797ac3d4a4fe78107560386f13ca7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1e9ee0ce27b64b8e8e47ede1bbe48a3b.setIcon(icon_8fe797ac3d4a4fe78107560386f13ca7);
+        
+    
+        var popup_56a36290029a43799c5340a54af73279 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96c24a3927cc425d88ddd768b4bfb03c = $(`<div id="html_96c24a3927cc425d88ddd768b4bfb03c" style="width: 100.0%; height: 100.0%;">Ohio Street #High measure count :26</div>`)[0];
+            popup_56a36290029a43799c5340a54af73279.setContent(html_96c24a3927cc425d88ddd768b4bfb03c);
+        
+
+        marker_1e9ee0ce27b64b8e8e47ede1bbe48a3b.bindPopup(popup_56a36290029a43799c5340a54af73279)
+        ;
+
+        
+    
+    
+            var marker_55cb912c73984615b13d7144537f0556 = L.marker(
+                [41.9877, -87.6545],
+                {}
+            ).addTo(map_7bfbbc02ef4e4aae9789bb04da82047b);
+        
+    
+            var icon_877ae2f3c07041ce90184a6444ed2b88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_55cb912c73984615b13d7144537f0556.setIcon(icon_877ae2f3c07041ce90184a6444ed2b88);
+        
+    
+        var popup_d4439dc8c68e45a692ccf1f36b02dc5a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce6be9dcf2e646ae8aa04819ad6ed22f = $(`<div id="html_ce6be9dcf2e646ae8aa04819ad6ed22f" style="width: 100.0%; height: 100.0%;">Osterman #High measure count :40</div>`)[0];
+            popup_d4439dc8c68e45a692ccf1f36b02dc5a.setContent(html_ce6be9dcf2e646ae8aa04819ad6ed22f);
+        
+
+        marker_55cb912c73984615b13d7144537f0556.bindPopup(popup_d4439dc8c68e45a692ccf1f36b02dc5a)
+        ;
+
+        
+    
+    
+            var marker_208df408a73841ebb26f507ce15da57c = L.marker(
+                [42.0213, -87.6666],
+                {}
+            ).addTo(map_7bfbbc02ef4e4aae9789bb04da82047b);
+        
+    
+            var icon_ee90e0011b0a4461ad2ebfbdb4418584 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_208df408a73841ebb26f507ce15da57c.setIcon(icon_ee90e0011b0a4461ad2ebfbdb4418584);
+        
+    
+        var popup_1964bcda3bad427b80820f791acc3a84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0ea8f8bd08d4ffd93a862d5a91b4067 = $(`<div id="html_d0ea8f8bd08d4ffd93a862d5a91b4067" style="width: 100.0%; height: 100.0%;">Rogers #High measure count :11</div>`)[0];
+            popup_1964bcda3bad427b80820f791acc3a84.setContent(html_d0ea8f8bd08d4ffd93a862d5a91b4067);
+        
+
+        marker_208df408a73841ebb26f507ce15da57c.bindPopup(popup_1964bcda3bad427b80820f791acc3a84)
+        ;
+
+        
+    
+</script>

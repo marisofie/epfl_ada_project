@@ -12,13 +12,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- Google fonts - Montserrat for headings, Cardo for copy-->
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
     <!-- theme stylesheet-->
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
     <!-- ekko lightbox-->
     <link rel="stylesheet" href="css/ekko-lightbox.css">
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css">
+    <!-- D3, graphing library-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <link rel="stylesheet" href="css/custom.css" />
+      
     <!-- Favicon-->
     <!--link rel="shortcut icon" href="favicon.png"-->
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
@@ -71,7 +77,6 @@
         <div class="row">
           <div class="col-md-12">
             <h2 class="heading">Introduction</h2>
-            <!--p class="lead">This can be an about section.</p-->
               <div class="col">
                   <h6 class="row-md-1">
                       <b>Motivation</b>
@@ -110,7 +115,8 @@
                   </h6>
                     <div class="row-sm-6">
                         <p>Explain how you explored the data -- with maps</p>
-
+                        
+                        <div id = "map"></div>
                   </div>
               </div>
             </div>
@@ -185,6 +191,7 @@
         </div>
       </div>
     </footer>
+    <script src='js/leafletmap.js'></script>
    
     </script>
   </body>
