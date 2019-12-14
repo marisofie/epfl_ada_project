@@ -119,7 +119,7 @@ def chlorepleth_map (name,gdf,columns,legend_name,color):
 
 
 
-def Adding_Marker(map_, longitude, latitude, popup, colour):
+def adding_Marker(map_, longitude, latitude, popup, colour):
     '''
     adds a marker which locates a facility on the map
     
@@ -143,3 +143,28 @@ def Adding_Marker(map_, longitude, latitude, popup, colour):
         icon = folium.Icon(color = colour)
     ).add_to(map_)
 
+    
+def adding_CircleMarker(map_, longitude, latitude, color,r):
+    '''
+    adds a marker which locates a facility on the map
+    
+    map_: folium.folium.Map
+        basic map
+    
+    longitude: numpy.float64
+    
+    latitude: numpy.float64
+    
+    popup: str
+        beach name and count of e-coli consentration higher than limit
+    
+    colour: str
+   '''
+    
+    
+    folium.CircleMarker(
+        location = [latitude,longitude], # coordinates for the marker 
+        color = color ,  # pop-up label for the marker
+        fill=True,
+        radius = r,
+    ).add_to(map_)
