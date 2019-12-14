@@ -6,7 +6,7 @@ window.onload = function () {
   $.getJSON("/maps/Boundaries-ZIPCodes.geojson", function(data) {
     var geojson = L.geoJSON(data, {
       onEachFeature: function (feature, layer) {
-        layer.bindPopup(feature.properties.Area_Name);
+        layer.bindPopup(feature.properties.zip);
       }
   });
   
