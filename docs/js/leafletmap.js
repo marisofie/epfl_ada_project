@@ -1,3 +1,5 @@
+//This class can be deleted must likely. 
+
 window.onload = function () {
     var basemap = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
