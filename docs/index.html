@@ -45,8 +45,6 @@
             <div class="col-md-8 col-md-offset-2 col-sm-12">
                 <div id="centered" style="margin: 0 auto; width:50%;"></div>
               <h1 style = "text-align:center">Food inspections with regards to food poisoning in Chicago</h1>
-              <!--p style= "text-align:center" class="italic">With more than 250 known types of foodborne illnesses, 
-                approximately 1 in 6 people in the United States are sickened by food poisoning each year.</p-->
             </div>
           </div>
         </div>
@@ -101,18 +99,18 @@
                       <h6 class="row-md-1">
                           <b>Project</b>
                       </h6>
-                          <div class="row-sm-6">
+                          <div class="row-sm-6" >
                               <p>As food poisoning is a real problem in Chicago, with the webpage iwaspoisoned collecting about 89'000 reports since 2009 (<a href ="https://iwaspoisoned.com/location/united-states/illinois/chicago#botpress"><i>source: iwaspoisoned </i></a>) we found it interesting to look at different reasons why people can get food poisoning from different facilities. By exploring different parameters, such as sanitation, e-coli and financial status of a community we hope to find similarities and in end be able to predict if a facility is likely to give a consumer food poisoning or not.</p>
-                              <div style="position:relative;padding-top:56.25%;">
-                                  <iframe onload="resizeIframe(this)" width="100%" height="100%" frameborder="0" scrolling="no" src="maps/cluster_map.html" 
-                                    style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                              <div style="position:relative;padding-top:35%;" display: flex; align-items: center; justify-content: center;>
+                                  <iframe width="100%" height="100%" frameborder="0" scrolling="no" src="maps/pie_plots.html" 
+                                    style="position:absolute;top:0;width:100%;height:100%;"></iframe>
                                 </div>
                             </div>
 
                             <div class="row-sm-6">
                                 <p>Some areas have a higher number of failed inspections than others, as is illustrated in the map below.</p>
                                 <div style="position:relative;padding-top:56.25%;">
-                                  <iframe src="maps/fail_map.html" frameborder="0" allowfullscreen
+                                  <iframe src="maps/cluster_map.html" frameborder="0" allowfullscreen
                                     style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
                                 </div>
               </div>
@@ -275,7 +273,6 @@
         </div>
       </div>
     </footer>
-    <script src='js/leafletmap.js'></script>
    
     </script>
   </body>
