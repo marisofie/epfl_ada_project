@@ -65,15 +65,14 @@ def violations_dataframe (separated_data, basic_data):
 
     # Create complete list of column names
     columns = critical + serious + minor
+    
 
     # Create dataframe using column names, violation data and inspection ID
     violations_data = pd.DataFrame(separated_data, columns=columns)
     violations_data['inspection_id'] = basic_data.inspection_id
     violations_data['license'] = basic_data.license
     violations_data['inspection_type'] = basic_data.inspection_type
-    violations_data['zip'] = basic_data.zip
-    violations_data['risk'] = basic_data.risk
-    violations_data['results'] = basic_data.results
+    #violations_data['zip']== basic_data.zip
 
     violation_counts = pd.DataFrame({
     "critical_count": violations_data[critical].sum(axis=1),
@@ -100,3 +99,38 @@ def violations_dataframe (separated_data, basic_data):
 
 
     return violations_data,violation_counts
+
+def violation_count(violations):
+    '''
+    Function that split the violations number from the violation description
+
+    Parameters
+    ----------
+
+    violations: pandas.Series
+        Violation column from dataframe with the different violations
+
+    Returns
+    -------
+    violation_number: dictionary
+        dictionary with violation counts
+    '''
+
+    #creating an empty dataframe in order to stock the violation numbers
+    violation_number = dict()
+    
+    for violation in violations:
+        if type(violation) == str:
+            #each different violation is separated by a ' | ' in a dataframe cell
+            violation = violation.split(' | ')
+
+            for v in violation:
+                #the index refers to the violation number
+                index = '#' + v.split('.')[0]
+                if index in violation_number:
+                    violation_number[index] += 1
+                #add 1 if there is a violation #.. and 0 if not.
+                else:
+                    violation_number[index] = 1
+
+    return violation_number
