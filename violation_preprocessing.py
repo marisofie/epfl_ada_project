@@ -65,14 +65,15 @@ def violations_dataframe (separated_data, basic_data):
 
     # Create complete list of column names
     columns = critical + serious + minor
-    
 
     # Create dataframe using column names, violation data and inspection ID
     violations_data = pd.DataFrame(separated_data, columns=columns)
     violations_data['inspection_id'] = basic_data.inspection_id
     violations_data['license'] = basic_data.license
     violations_data['inspection_type'] = basic_data.inspection_type
-    #violations_data['zip']== basic_data.zip
+    violations_data['zip'] = basic_data.zip
+    violations_data['risk'] = basic_data.risk
+    violations_data['results'] = basic_data.results
 
     violation_counts = pd.DataFrame({
     "critical_count": violations_data[critical].sum(axis=1),
