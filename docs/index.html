@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- Google fonts - Montserrat for headings, Cardo for copy-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Varela+Round'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Montserrat:400,400italic,700">
     <!-- theme stylesheet-->
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
     <!-- ekko lightbox-->
@@ -38,7 +37,7 @@
 
       <style>
         body {
-          font-family: 'Varela+Round';
+          font-family: 'Montserrat';
           } 
       </style>
   </head>
@@ -173,7 +172,7 @@
                           ZIP codes division can be helpful for visualizing spatial inequalities in Chicago. 
                       </p>
                       <div style="position:relative;padding-top:56.25%;">
-                          <iframe src="maps/sanitation_map.html" frameborder="0" allowfullscreen
+                          <iframe src="maps/interactif_fail_map.html" frameborder="0" allowfullscreen
                             style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
                         </div>
                       </div>
@@ -227,24 +226,81 @@
                                     style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
                                 </div-->
                           </p>
-                          <p style = 'text-align: center; font-size: 30px; color: brown'>
+                          <p style = 'text-align: center; font-size: 30px; color: brown; '>
                               Is there a link between these inspections’ elements and food poisoning? 
                           </p>
                         </div>
                       </div>
+                    <div class = "row-sm-6">
                       <div class = "row">
-                      <div clas="col-md-6">
-                          Some foods are more at <span style="color: red;">risk</span> of bacterial growth than others. Therefore if they aren’t correctly cooked, there’s a higher chance they will cause a foodborne illness.
-                          Using the dataset <a href = "https://wwwn.cdc.gov/norsdashboard/"><u>National Outbreak Reporting System</u></a>, one can point out the foods that cause the highest number of food born illnesses.                          
+                        <div class = "col-md-5">
+                          <p>
+                            <div display style = 'position:relative'>
+                              <iframe width="400" height="400" scrolling = 'no' frameborder="no"  src="maps/foods_sickness.html" allowfullscreen></iframe>
+                              </div>
+                            </p>    
+                          </div>
+                        <div class="col-md-7" style="position: relative; padding-top: 15%">
+                              <p>
+                                Some foods are more at <span style="color: red; top:0; padding: 0">risk</span> of bacterial growth than others. Therefore if they aren’t correctly cooked, there’s a higher chance they will cause a foodborne illness.
+                                Using the dataset <a href = "https://wwwn.cdc.gov/norsdashboard/"><u>National Outbreak Reporting System</u></a>, one can point out the foods that cause the highest number of food born illnesses.                          
+                                </p>
+                            </div>
                         </div>
-                      <div class = "col-md-6">
-                          <div display style = 'position:initial; top:0; left:0; text-align: center'>
-                              <iframe width="400" height="400" scrolling = 'no' frameborder="no"  src="maps/food_sickness_pie.html" allowfullscreen></iframe>
-                    </div>
-                      </div>
+                        <div class = "row">
+                            <div class = "col-md-5">
+                              <p>
+                                INSERT PLOT FROM SCORE.PY
+                                <!--div display style = 'position:relative'>
+                                  <iframe width="400" height="400" scrolling = 'no' frameborder="no"  src="maps/foods_sickness.html" allowfullscreen></iframe>
+                                  </div-->
+                                </p>    
+                              </div>
+                            <div class="col-md-7" style="position: relative; padding-top: 15%">
+                                  <p>
+                                    This factor is reflected by the <span style="color: red; top:0; padding: 0">risk level attributed to each facility.</span>
+                                      More than 80 % facilities that were inspected due to suspected food poisoning are associated with a high risk level.  
+                                      Also, any of them is associated with a low risk level which shows the consistency of this risk scale <b> -- What does this mean?</b>. 
+                                    </p>
+                                </div>
+                            </div>
+                          <div class = "row">
+                            <div class = "col-md-7">
+                              <p>
+                                Each zip code have a different number of facilities associated with a high risk level. 
+                                However, if we normalize this number by the total number of facilities by zip code, we can compare the proportion of high risk per area. 
+                              </p>
+                              </div>
+                            <div class="col-md-5">
+                              <p>
+                                INSERT MAP WITH DIFFERENT RISK LEVELS HERE
+                              </p>
+                              </div>
+                            </div>  
+                          <div class = "row">
+                              <div class = "col-md-12">
+                                <p>
+                                  In order to investigate about the link between the risk level and foodborne illness, we decided to visualize the relationship between the proportion of facilities associated with a high risk level and the proportion of food poisoning within a zip code. 
+                                </p>
+                                </div>
+                              <div class="col-md-12">
+                                <p>
+                                  INSERT SCATTER PLOT
+                                </p>
+
+                                <p>
+                                  Curiously, even if the area associated with the zip code 60827 have the lowest proportion of high risk facilities, a high number of inspections due to food poisoning can be observed.
+                                  The 60827 zip code is associated with a community called Riverdale. Riverdale is one of the hardest neighborhoods in the city and considered one of the most dangerous communities.
+                                  It is known to struggles with high unemployment, poverty and gang violence.
+                                  
+                                </p>
+                                </div>
+                              </div> 
                       </div>
                     </div>
                 </div>
+              </div>
+          </div>
     </section>
     <!-- Correlation between food poisoning and inspections-->
     <!-- Machine learning-->

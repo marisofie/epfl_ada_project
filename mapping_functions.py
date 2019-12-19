@@ -102,7 +102,7 @@ def chlorepleth_map (name,gdf,columns,legend_name,color):
     
     folium.Choropleth(
         geo_data=geo,
-        name='name',
+        name=name,
         data=gdf,
         columns=columns,
         key_on='feature.properties.zip',
