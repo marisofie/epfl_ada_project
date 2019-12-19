@@ -72,7 +72,7 @@
                 <li class="active"><a href="#foodpois">Food poisoning</a></li>
                 <li><a href="#story">Story of Chicago </a></li> <!--CHANGE THE DIFFERENT LINKS TO THE DIFFERENT SECTIONS-->
                 <li><a href="#correlation">????</a></li>
-                <li><a href="#foodPoisoning">Predicting food poisoning</a></li>
+                <li><a href="#seaside">The seaside</a></li>
                 <li><a href="#analysis">Analysis</a></li>
               </ul>
             </div>
@@ -111,7 +111,7 @@
                             <div class="row-sm-6">
                                 <p>Number of outbreaks per state: Some states count a higher number of outbreaks than another as shown in the map below.</p>
                                 <div style="position:relative;padding-top:56.25%;">
-                                  <iframe src="maps/US_map.html" frameborder="0" allowfullscreen
+                                  <iframe id = "us_map" src="maps/US_map.html" frameborder="0" allowfullscreen
                                     style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
                                 </div>
                                 <p style = 'text-align: center'><i>OUTBREAKS IN THE US</i></p>
@@ -201,19 +201,23 @@
               <div class="col-md-12">
                 <h2 class="heading">??????</h2>
                   <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-6" style="position: relative; padding-top: 10%">
                           <p>
                               <a href = "https://www.fda.gov/food/retail-food-protection/fda-food-code" ><u>The model Food Code</u></a>
                               developed by the U.S. Food and Drug Administration (FDA), have been adopted by many states with regards to inspection practices, and report forms.
                               Many jurisdictions now make inspection results available online, allowing consumers to view the results when considering where to dine. But the usefulness of this information to reduce the risk of foodborne illness is still unknown.
                           </p>
+                      </div>
+                      <div class = "col-md-6">
                           <p>
                             <div display style = 'position:initial; top:0; left:0; text-align: center'>
                                 <iframe width="400" height="400" scrolling = 'no' frameborder="no"  src="plots/inspect_result_fp.html" allowfullscreen></iframe>
                               </div>
+
                           </p>
+                        </div>
                           <p style = 'text-align: center; font-size: 30px; color: maroon; '>
-                              Is there a link between these inspections’ elements and food poisoning? 
+                              Is there a link between the inspections' elements and food poisoning? 
                           </p>
                         </div>
                       </div>
@@ -241,7 +245,7 @@
                                   </div>
                                 </p>    
                               </div>
-                            <div class="col-md-7" style="position: relative; padding-top: 15%">
+                            <div class="col-md-7" style="position: relative; padding-top: 13%">
                                   <p>
                                     This factor is reflected by the <span style="color: maroon; top:0; padding: 0"><b>risk level attributed to each facility.</b></span>
                                       More than 80% facilities that were inspected due to suspected food poisoning are associated with a high risk level.  
@@ -328,15 +332,22 @@
           </div>
     </section>
     <!-- Correlation between food poisoning and inspections-->
-    <!-- Machine learning-->
-    <section id="foodPoisoning" style="background-color: #333;" class="text-page section-inverse">
+    <!-- The seaside-->
+    <section id="seaside" style="background-color: #333;" class="text-page section-inverse">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2 class="heading">Predicting food poisoning</h2>
+            <h2 class="heading">The seaside</h2>
             <div class="row">
-              <div class="col-sm-6">
-                <p>Describe the process of predicting food poisoning </p>
+              <div class="col-sm-12">
+                <p>
+                    Looking at the US outbreak map <a href="#us_map" style="color: white"><u>US outbreak map</u></a> or the following map, we can observe a more frequent food poisoning cases by the seaside.</p>
+              </div>
+              <div class = "col-sm-12">
+                  <div style="position:relative;padding-top:56.25%;">
+                      <iframe id = "us_map" src="maps/poison_wcircle_map.html" frameborder="0" allowfullscreen
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
               </div>
               <div class="col-sm-6">
                 <p>add something here? mix up the layout </p>
