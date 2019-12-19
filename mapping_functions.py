@@ -21,7 +21,6 @@ def generateBaseMap(default_location = [41.8600, -87.6298], default_zoom_start =
     return base_map
 
 
-
 def geodataframe(df):
     '''
     converts a dataframe into a geodataframe
@@ -65,7 +64,6 @@ def geodataframe(df):
     gdf.rename(columns = {'license': 'facility_number_per_zip'}, inplace = True)
     
     return gdf
-
 
 
 def chlorepleth_map (name,gdf,columns,legend_name,color):
@@ -116,7 +114,6 @@ def chlorepleth_map (name,gdf,columns,legend_name,color):
         #add_markers(map)
     
     return map_
-
 
 
 def adding_Marker(map_, longitude, latitude, popup, colour):
