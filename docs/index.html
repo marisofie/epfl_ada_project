@@ -70,10 +70,10 @@
             <div id="navigation" class="collapse navbar-collapse navbar-right">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#foodpois">Food poisoning</a></li>
-                <li><a href="#story">Story of Chicago </a></li> <!--CHANGE THE DIFFERENT LINKS TO THE DIFFERENT SECTIONS-->
+                <li><a href="#story">Story of Chicago </a></li> 
                 <li><a href="#correlation">????</a></li>
-                <li><a href="#seaside">The seaside</a></li>
-                <li><a href="#analysis">Analysis</a></li>
+                <li><a href="#seaside">The Seaside</a></li>
+                <li><a href="#report">Report Food Poisoning</a></li>
               </ul>
             </div>
           </div>
@@ -198,10 +198,17 @@
           <div class="col-md-12"></div>
             <div class = "col-md-5">
               <p>
-                <div display style = 'position:relative'>
+                <div id = 'foodpie' display style = 'position:relative'>
                   <iframe width="400" height="400" scrolling = 'no' frameborder="no"  src="plots/foods_sickness.html" allowfullscreen></iframe>
                   </div>
-                </p>    
+                </p>  
+              <p>
+                  This factor is reflected by the <span style="color: maroon; top:0; padding: 0"><b>risk level attributed to each facility.</b></span>
+                    More than 80% facilities that were inspected due to suspected food poisoning are associated with a high risk level.  
+                    Also, almost none of them are associated with a low risk level which shows the consistency of this risk scale.
+                    <br>
+                    Although the plot show that over 80% of the facilities that are suspected for food poisoning have a high risk level, we can not conclude that a facility with a high risk level will cause food poisoning.
+                  </p>  
               </div>
             <div class="col-md-7" style="position: relative; padding-top: 5%">
               <h3 style = "color: maroon">
@@ -211,43 +218,14 @@
                 Some foods are more at <span style="color: maroon; top:0; padding: 0"><b>risk</b></span> of bacterial growth than others. Therefore if they are not correctly cooked, there is a higher chance they will cause a foodborne illness.
                 Using the dataset <a href = "https://wwwn.cdc.gov/norsdashboard/"><u>National Outbreak Reporting System</u></a>, one can point out the foods that cause the highest number of foodborn illnesses.                          
                 </p>
+              <p>
+                  <div display style = 'position:initial; top:0; left:0; text-align: center'>
+                      <iframe width="400" height="400" scrolling = 'no' frameborder="no"  src="plots/risk_suspected_fp.html" allowfullscreen></iframe>
+                    </div>
+                  </p>  
               </div>
             </div>
-          <div class="col-md-12">
-            <div class="col-md-7" style="position: relative; padding-top: 5%">
-              <h3 style = "color: maroon">
-                The food
-                </h3>
-              <p>
-                This factor is reflected by the <span style="color: maroon; top:0; padding: 0"><b>risk level attributed to each facility.</b></span>
-                  More than 80% facilities that were inspected due to suspected food poisoning are associated with a high risk level.  
-                  Also, almost none of them are associated with a low risk level which shows the consistency of this risk scale.
-                  <br>
-                  Although the plot show that over 80% of the facilities that are suspected for food poisoning have a high risk level, we can not conclude that a facility with a high risk level will cause food poisoning.
-                </p>
-              </div>
-            <div class = "col-md-5">
-              <p>
-                <div display style = 'position:initial; top:0; left:0; text-align: center'>
-                    <iframe width="400" height="400" scrolling = 'no' frameborder="no"  src="plots/risk_suspected_fp.html" allowfullscreen></iframe>
-                  </div>
-                </p>    
-              </div>
-            </div>
-            <div class = "col-md-12">
-              <p>
-                Each zip code have a different number of facilities associated with a high risk level. 
-                However, if we normalize this number by the total number of facilities by zip code, we can compare the proportion of high risk per area. 
-                </p>  
-              <p>
-                <div style="position:relative;padding-top:56.25%;">
-                    <iframe src="maps/interactif_risk_map.html" frameborder="0" allowfullscreen
-                      style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-                  </div>
-                  <p style = 'text-align: center'><i>Average risk level per zip code in Chicago: high risked facilities are concentrated at the center by the sea.<br><a href = "https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5/data">Source: Chicago open data</a></i></p>
-                </p>
-              </div>  
-            <div class = "col-md-12">
+            <div class = "col-sm-12">
               <p>
                 In order to investigate about the link between the risk level and foodborne illness, we decided to visualize the relationship between the proportion of facilities associated with a high risk level and the proportion of food poisoning within a zip code. 
                 </p>
@@ -283,9 +261,11 @@
                 The inspections that were made due to suspected poisoning shows a higher frequency of priority and priority foundation violations.
                 </p>
               <p>
-                <div display style = 'position:initial; top:0; left:0; text-align: center'>
-                    <iframe width="1200" height="700" scrolling = 'no' frameborder="no"  src="plots/bubble_violation.html" allowfullscreen></iframe>
+                <div id = 'bubble' display style = 'position:initial; top:0; left:0; text-align: center'>
+                    <iframe width="900" height="500" scrolling = 'no' frameborder="no"  src="plots/bubble_violation.html" allowfullscreen></iframe>
                   </div>
+                  <p style = 'text-align: center'><i>The size of the bubbles reflects the ratio between the frequency of violations associated with food poisoning inspections and the frequency of violations with other kind of inspections (canvas and complaints). 
+                    <br>Yellow: Core violations, Orange: Priority foundation, Red: Priority violations.  <a href = "https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5/data" style = "color: white">Source: Chicago open data</a></i></p>
                 </p>
               </div>
           </div> 
@@ -308,13 +288,18 @@
             <p style = 'text-align: center; font-size: 20px; color: white'>
                 Is there a correlation between food poisoning and the facility distance by the sea? 
               </p>
-            <div style="position:relative;padding-top:56.25%;">
-              <iframe id = "us_map" src="maps/poisoning_webscrap_map.html" frameborder="0" allowfullscreen
-                  style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-              </div>
+            <p>
+              <div display style = 'position:initial; top:0; left:0; text-align: center'>
+                  <iframe width="700" height="500" scrolling = 'no' frameborder="no"  src="plots/distance_sea.html" allowfullscreen></iframe>
+                </div>
+              </p>
             <p style = 'text-align: center'><i>something something <a href = "https://iwaspoisoned.com/location/united-states/illinois/chicago#botpress" style = "color: white">Source: iwaspoisoned</a></i></p>
+            <p>
+              The correlation between the food poisoning frequency within a zip code and the distance by the city center is a moderate, negative monotonic correlation reflected by significant coefficient equal to -0.44 (n = 51, p < 0.05). 
+              The correlation between the food poisoning frequency within a zip code and the distance by the sea  is also a moderate, negative monotonic correlation reflected by significant coefficient equal to -0.53 (n = 51, p < 0.001).
+            </p>
             <h3>
-              Observations
+              What could explain these observations?
             </h3>
             <p>
               <span style="color:rgb(63, 126, 155)"><b>Escherichia coli</b></span> is a bacterium that lives in the intestines of humans and animals alike and also causes food poisoning illness. A major source of E. coli infections is undercooked beef. Other sources of E. coli bacteria include <span style="color: rgb(63, 126, 155)"><b>drinking or swimming in water that is contaminated by sewage. 
@@ -330,31 +315,77 @@
                 <iframe id = "us_map" src="maps/interactif_poison_map.html" frameborder="0" allowfullscreen
                     style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
                 </div>
-              <p style = 'text-align: center'><i>Poison concentration with markers for e-coli levels in the seawater. Red marker equals 30*BAV, orange marker equals more than 10*BAV and blue marker equals at most 10*BAV. <a href = "" style = "color: white">Source: ??</a></i></p>
+              <p style = 'text-align: center'><i>Poison concentration with markers for e-coli levels in the seawater. Red: the e-coli concentration exceeds more than 30 times the BAV,
+                Orange: the e-coli concentration exceeds more then 10 times the BAV,
+                Blue: the e-coli concentration exceeds at most 10 times the BAV.
+                . <a href = "" style = "color: white">Source: ??</a></i></p>
               <h3>
             </div>
           </div>
         </div>
     </section>
-    <!-- Machine learning end-->
-    <!-- analysis-->
-    <section id="analysis" style="background-color: #fff;" class="text-page"> 
+    <!-- the seaside end-->
+    <!-- report food poisoning-->
+    <section id="report" style="background-color: #fff;" class="text-page"> 
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2 class="heading">Analysis</h2>
+            <h2 class="heading">Report food poisoning - Protect others</h2>
             <div class="row">
               <div class="col-md-12">
-                <p>Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed. </p>
-                <p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. </p>
+                <p>
+                  In order to have a better insight into food poisoning in Chicago, we decided to analyze real consumers’ complaints. 
+                  Patrick Quade, who had no history with the restauration or science world when he started the <a href= "https://iwaspoisoned.com/page/about"><u>IWasPoisoned</u></a> website, was working in finance in New York City when he says the facility that sold him bad food ignored his complaints. Furious, he created an online platform to report food poisoning. People self-report suspected foodborne illnesses after dining in a specific facility. 
+                  Details are given on the time and date, the food ordered, and even the symptoms of the experienced sickness. This way, the website has a track record of accurately spotting illness outbreaks even before health officials or restaurants. In 2017, information gathered from his users helped identify the norovirus outbreak at Chipotle restaurants (<a href = "https://www.livescience.com/59885-chipotle-outbreak-norovirus.html"><i>Source: Livescience</i></a>).
+                </p>
+                <h3>Reports of violations</h3>
+                <p>
+                  There are many reports that contain the violation numbers that is found in the food inspesction data.
+                  The priority violations 3 (problem in hot and cold storage temperature) is reported more than 50 times. This violation is more frequent in food poisoning cases as seen <a href="#bubble"><u>here</u></a>. The violation 5, which is also frequently reported, correspond to reserved food. ( modifiy this when we will have the final plot ) 
+                </p>
+                <!-- INSERT CORRECT PLOT HERE!-->
+                <div display style = 'position:initial; top:0; left:0; text-align: center'>
+                    <iframe width="700" height="500" scrolling = 'no' frameborder="no"  src="plots/distance_sea.html" allowfullscreen></iframe>
+                  </div>
+                  <p style = 'text-align: center'><i>Red: priority violations, Orange: priority foundation violations, Green:core violations.</i></p> 
+                </p>
+                </div>
+                <br>
+              <div class = "col-md-12">
+                <div class = "col-md-5">
+                  <p style = "text-align:center;" >
+                      <img src = "img/word_plot.png"/>
+                  <p>
+                  </div>
+                <div class = "col-md-7" style = "padding-top: 10%">
+                  <p>
+                    The word cloud plot shows the most frequent words used by people who have reported food poisoning on <a href = "https://iwaspoisoned.com/page/about"><u>IWasPoisoned</u></a>. 
+                    We can notice that words describing frequent symptoms of food borne illness such as ‘diarrhea’, ‘fever and ‘vomit’ are highly present in the complaints. 
+                    Some words also give insight on the types of food ingested before the illness. 
+                    As seen in the <a href="#foodpie"><u>pie chart</u></a> above, food poisoning is commonly caused by undercooked chicken .
+                  </p>
+                  </div>
+                </div>
+              <div class = "col-md-12">
+                <p>
+                  Thanks to the lexicon, the words will be distributed into 2 categories: <b>Symptoms</b> and <b>Food</b>.
+                  <br>
+                  Since the proximity to the sea is suspected to play a role in food poisoning due to Ecoli infections, we plot the frequency of the words from these categories with respect to the distance to the sea. 
+                  </p>
+                <div class = "col-md-6">
+                  <img src = "img/food_med.png"/>
+                  </div>
+                <div class = "col-md-6">
+                  <img src = "img/emergency_med.png"/>
+                  </div>
 
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- analysis end-->
+      </section>
+    <!-- report food poisoning end-->
     <!-- template-->
     <footer style="background-color: #111;" class="section-inverse">
       <div class="container"> 
