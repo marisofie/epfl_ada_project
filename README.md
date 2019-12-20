@@ -1,7 +1,8 @@
                                         
-                                                            --- MILESTONE 3 ---
+                                                --- MILESTONE 3 ---
                                         
 [<b>Datastory:</b>](https://marisofie.github.io/epfl_ada_project/)
+
 [Main file milestone 3](main_file_milestone3.ipynb)
 
 # Abstract
@@ -64,7 +65,7 @@ Another data of interest ([I was poisoned](https://iwaspoisoned.com/location/uni
 
 
                                         
-                                                          --- MILESTONE 2 ---
+                                                --- MILESTONE 2 ---
                                         
 
 
