@@ -1,7 +1,7 @@
                                         
                                                 --- MILESTONE 3 ---
                                         
-[<b>Datastory:</b>](https://marisofie.github.io/epfl_ada_project/)
+<b>Datastory:</b> [https://marisofie.github.io/epfl_ada_project/](https://marisofie.github.io/epfl_ada_project/)
 
 [Main file milestone 3](main_file_milestone3.ipynb)
 
