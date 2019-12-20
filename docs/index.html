@@ -75,7 +75,7 @@
                 <li><a href="#seaside">The Seaside</a></li>
                 <li><a href="#report">Report</a></li>
                 <li><a href="#predict">Predict</a></li>
-                <li><a hred="#conclusion">Conclusion</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
               </ul>
             </div>
           </div>
@@ -412,6 +412,11 @@
                 </p>
                 </div>
               <div class="col-md-12">
+                <div class="col-md-7">
+                  <div display style = 'position:initial; top:0; left:0; text-align: center'>
+                      <iframe width="600" height="600" scrolling = 'no' frameborder="no"  src="plots/class_frequency.html" allowfullscreen></iframe>
+                    </div>
+                  </div>
                 <div class="col-md-5">
                     <h3 style='color: maroon; padding-top: 10%'>The problem: Unbalanced dataset</h3>
                     <p>
@@ -419,22 +424,14 @@
                       However, a further analysis revealed that the class is extremely unbalanced, with the negative value corresponding to over 99% of the data. 
                       Furthermore, we discovered that the model is completely unefficient at predicting food poisoning cases, and maximizes the accuracy by classifying each of the inspections as non-related to food poisoning.
                       </p>
-                    <p>
-                      <img src = "img/xgboost_test_tree_1.pdf"/>
-                      </p>
-                  </div>
-                <div class="col-md-7">
-                  <div display style = 'position:initial; top:0; left:0; text-align: center'>
-                      <iframe width="600" height="600" scrolling = 'no' frameborder="no"  src="plots/class_frequency.html" allowfullscreen></iframe>
-                    </div>
-                  <h3 style="color:maroon">Solution </h3>
-                  <p>
-                    We trained an XGBoost classifier to handle this class, which is an extreme boosting algorithm based on trees and built to enable handle unbalanced dataset. We used the F1 score as a metric of performance as well as the ROC-curve to select the best model. 
-                    We also made use of a score that we created based on the <a href="#bubble"><u> violations frequency</u></a> during food poisoning inspections. The more frequent a violation is, the bigger the associated weight.
-                  </p>
                   </div>
                 </div>
               <div class="col-md-12">
+                <h3 style="color:maroon">Solution </h3>
+                <p>
+                  We trained an XGBoost classifier to handle this class, which is an extreme boosting algorithm based on trees and built to enable handle unbalanced dataset. We used the F1 score as a metric of performance as well as the ROC-curve to select the best model. 
+                  We also made use of a score that we created based on the <a href="#bubble"><u> violations frequency</u></a> during food poisoning inspections. The more frequent a violation is, the bigger the associated weight.
+                </p>
                 <h3 style="color:maroon">
                   Performance comparison
                   </h3>
