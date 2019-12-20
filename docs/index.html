@@ -75,6 +75,7 @@
                 <li><a href="#seaside">The Seaside</a></li>
                 <li><a href="#report">Report</a></li>
                 <li><a href="#predict">Predict</a></li>
+                <li><a hred="#conclusion">Conclusion</a></li>
               </ul>
             </div>
           </div>
@@ -412,6 +413,17 @@
                 </div>
               <div class="col-md-12">
                 <div class="col-md-5">
+                    <h3 style='color: maroon; padding-top: 10%'>The problem: Unbalanced dataset</h3>
+                    <p>
+                      After running two different  binary classification models, we were able to reach an accuracy of more than 99%. 
+                      However, a further analysis revealed that the class is extremely unbalanced, with the negative value corresponding to over 99% of the data. 
+                      Furthermore, we discovered that the model is completely unefficient at predicting food poisoning cases, and maximizes the accuracy by classifying each of the inspections as non-related to food poisoning.
+                      </p>
+                    <p>
+                      <img src = "img/xgboost_test_tree_1.pdf"/>
+                      </p>
+                  </div>
+                <div class="col-md-7">
                   <div display style = 'position:initial; top:0; left:0; text-align: center'>
                       <iframe width="600" height="600" scrolling = 'no' frameborder="no"  src="plots/class_frequency.html" allowfullscreen></iframe>
                     </div>
@@ -420,17 +432,6 @@
                     We trained an XGBoost classifier to handle this class, which is an extreme boosting algorithm based on trees and built to enable handle unbalanced dataset. We used the F1 score as a metric of performance as well as the ROC-curve to select the best model. 
                     We also made use of a score that we created based on the <a href="#bubble"><u> violations frequency</u></a> during food poisoning inspections. The more frequent a violation is, the bigger the associated weight.
                   </p>
-                  </div>
-                <div class="col-md-7">
-                  <h3 style='color: maroon; padding-top: 10%'>The problem: Unbalanced dataset</h3>
-                  <p>
-                    After running two different  binary classification models, we were able to reach an accuracy of more than 99%. 
-                    However, a further analysis revealed that the class is extremely unbalanced, with the negative value corresponding to over 99% of the data. 
-                    Furthermore, we discovered that the model is completely unefficient at predicting food poisoning cases, and maximizes the accuracy by classifying each of the inspections as non-related to food poisoning.
-                    </p>
-                  <p>
-                    <img src = "img/xgboost_test_tree_1.png"/>
-                    </p>
                   </div>
                 </div>
               <div class="col-md-12">
@@ -450,7 +451,7 @@
                 </div>
               <div class="col-md-12">
                 <div class="col-md-6">
-                  <img src = "img/ROC.png"/>
+                    <img src="img/ROC_plot.png"/>
                   </div>
                 <div class="col-md-6" style="padding-top: 15%">
                     However, even if we tried to improve the model, the area under the ROC curve is too low to conclude that we can predict food poisoning based on this features (AUC = 56%, knowing that when AUC is 0.5, it means model has no class separation capacity whatsoever). 
@@ -462,6 +463,43 @@
         </div>
       </section>
     <!-- predicting food poisoning end-->
+    <!--conclusion-->
+    <section id="conclusion" style="background-color: #333;" class="text-page section-inverse"> 
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="heading">Conclusion</h2>
+            <div class="row">
+              <div class="col-md-12">
+                <p>
+                  In a nutshell, by studying the data set from the food inspections with care, we have found various related factors and attempted to predict which restaurants will cause food poisoning. 
+                  The results were not convincing enough to insure the precision of these predictions. 
+                  However, thanks to various platforms on the internet, it is still possible to avoid people from being sick ! 
+                  </p>
+                <p>
+                  <b>Here is a guideline that could be helpful for a consumer in Chicago:</b>
+                  <ul>
+                  <li>Do not trust the inspection results of the facility. A facility that passed the inspection might still cause food poisoning.</li>
+                  <li>Be careful when ordering meat dishes. Various sickness arise from uncooked meat such as chicken.</li>
+                  <li>Report any food poisoning on online platforms such as iwaspoisoned.com. It may discourage other people from going to the same restaurant.</li>
+                  <li>Report food poisoning to the health officials to avoid an outbreak.</li>
+                  </ul>
+                </p>
+                <p>
+                  <b>Guidelines for a food business:</b>
+                  <br>Give extra care to the hygienic measures and cooking methods. Be more pre-cautious if:
+                  <ul>
+                    <li>The risk of your facility is high.</li>
+                    <li>If the facility is located near the sea.</li>
+                  </ul>
+                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--conclusion end-->  
     <!-- template-->
     <footer style="background-color: #111;" class="section-inverse">
       <div class="container"> 
