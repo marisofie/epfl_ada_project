@@ -1,6 +1,9 @@
                                         
                                                             --- MILESTONE 3 ---
                                         
+[<b>Datastory:</b>](https://marisofie.github.io/epfl_ada_project/)
+[Main file milestone 3](main_file_milestone3.ipynb)
+
 # Abstract
 *One of our previous goals was to predict food poisoning with the use of Machine Learning algorithms. However, we have found that the precision of these predictions is quite poor. The amount of information on food poisoning inspection type is very low compared to the other inspection types, so it is difficult to obtain good statistical results for the predictions.
 The aim of our work is now orientated towards proving that facility inspections and food poisonings are not always correlated. We have found that in some cases, factors unrelated to the facility's hygiene like the proximity to the sea and the proximity to the city center are correlated with the rate of food poisoning per zip code area.
@@ -9,18 +12,20 @@ Also, the webscraping will enable the analysis of the posts written in reports o
 *Food poisoning is a health issue, and it is important to classify where they happen and take the right actions to ensure that it does not happen in the future. Even though this project cannot predict the likelyhood of a specific facility to cause food poisoning, it can still help people to choose more wisely where to eat or shop for food.* 
 
 # Questions
-- Why doesn't the facility's inspection result not correlate necessarily with the chances of food poisoning ? 
-- Does the location of the facility impact the food poisoning likelyhood ? If so, must we take into account the distace to the city center of the distance to the sea ? 
 - What kinds of food cause food poisoning ? 
+- Are the facility inspections correlated with food poisoning ? 
+- Does the location of the facility impact the food poisoning likelyhood ?
+- To which extent can we predict food poisoning ?
 - What must we look out for to avoid the sickness ?
-# Different chapters of the notebook
 
+
+# Different chapters of the notebook
 - Context (Mariam)
   - Visualization of the number of outbreaks per state
   - Types of food that are more likely to cause food poisoning are given 
 - Spatial visualization (Mariam)
   - Inspection results and risk levels of facilities in chicago are mapped with respect to the zip code area
-- Relationships investigation (Mariam)
+- Relationships investigation (Mariam and Mari Sofie)
   - Correlation between inspection results and food poisoning
   - Correlation between the risk level and the food poisoning
   - Correlation between the violation type and the food poisoning
@@ -32,11 +37,20 @@ Also, the webscraping will enable the analysis of the posts written in reports o
   - Finding of topics 
   - Investigation on the use of health related terms and food related terms with respect to the distance to the sea
 - Applied marching learning (Ahmed)
+  - Building and testing models for predicting cases of food poisoning
   - Proof that the food poisonings are hard to predict
   
-  Realisation of data story by Marisofie
   
-  Presentation by 
+  ### Other tasks
+  - Data Cleaning (Mariam, Ahmed, Mari Sofie and Jasmine)
+  - Code cleaning and representation/visualizations (Mari Sofie)
+  
+  Realisation of data story by Mari Sofie and Mariam
+  
+  
+  Presentation by Jasmine and Mari Sofie 
+  
+  Poster by Ahmed
   
 # Dataframes 
 
