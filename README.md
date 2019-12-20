@@ -1,4 +1,57 @@
-                                             --- UPDATED VERSION ---
+                                        
+                                                            --- MILESTONE 3 ---
+                                        
+# Abstract
+*One of our previous goals was to predict food poisoning with the use of Machine Learning algorithms. However, we have found that the precision of these predictions is quite poor. The amount of information on food poisoning inspection type is very low compared to the other inspection types, so it is difficult to obtain good statistical results for the predictions.
+The aim of our work is now orientated towards proving that facility inspections and food poisonings are not always correlated. We have found that in some cases, factors unrelated to the facility's hygiene like the proximity to the sea and the proximity to the city center are correlated with the rate of food poisoning per zip code area.
+Also, the webscraping will enable the analysis of the posts written in reports of food poisoning on iwaspoisoned.com. Text handling allows the identification of topics and of specific foods that have caused sicknesses.*
+
+*Food poisoning is a health issue, and it is important to classify where they happen and take the right actions to ensure that it does not happen in the future. Even though this project cannot predict the likelyhood of a specific facility to cause food poisoning, it can still help people to choose more wisely where to eat or shop for food.* 
+
+# Questions
+- Why doesn't the facility's inspection result not correlate necessarily with the chances of food poisoning ? 
+- Does the location of the facility impact the food poisoning likelyhood ? If so, must we take into account the distace to the city center of the distance to the sea ? 
+- What kinds of food cause food poisoning ? 
+- What must we look out for to avoid the sickness ?
+# Different chapters of the notebook
+
+- Context (Mariam)
+  - Visualization of the number of outbreaks per state
+  - Types of food that are more likely to cause food poisoning are given 
+- Spatial visualization (Mariam)
+  - Inspection results and risk levels of facilities in chicago are mapped with respect to the zip code area
+- Relationships investigation (Mariam)
+  - Correlation between inspection results and food poisoning
+  - Correlation between the risk level and the food poisoning
+  - Correlation between the violation type and the food poisoning
+- Sea exploration (Mariam and Jasmine)
+  - Ecoli from the beaches
+  - Is the distance to the city center more correlated to food poisoning than the distance to the sea ? 
+- Natural Langage processing of post from iwaspoisonned.com (Jasmine)
+  - Identification of these most frequent words in the posts
+  - Finding of topics 
+  - Investigation on the use of health related terms and food related terms with respect to the distance to the sea
+- Applied marching learning (Ahmed)
+  - Proof that the food poisonings are hard to predict
+  
+  Realisation of data story by Marisofie
+  
+  Presentation by 
+  
+# Dataframes 
+
+The first dataset used is US Chicago (https://wwwn.cdc.gov/norsdashboard/)(950 ko) which gives information on multiple outbreaks in America from 1998 to 2017. The columns of interest are 'Etiology','Illnesses','Hospitalizations','Food Vehicle' and 'Food Contaminated Ingredient'. It is a very useful dataset to find the types of food that often cause foodborne illnesses.
+
+Our main dataset hosted by the city of Chicago ([Food inspections Chicago]( https://kaggle.com/chicago/chicago-food-inspections)) is worked on in the second chapter. The file has a size of 220 MB and contains the results of several food inspections conducted by the city within different food facilities (restaurants, groceries, and others) from the 1st of  January 2010. More information from the dataset includes institution-specific data (legal name, license number, address), their risk of altering public health (depending on how difficult it is to conserve the food that is served) and the type of violation(s) committed during the different inspections. It is useful for the visualization of the risk and results of the inspections per zip code.
+
+We have found a dataset "beach-e.-coli-predictions.csv" (373.53 KB) providing information on the presence of the bacteria Ecoli on beaches in Chicago. The given information are the dates, the beach names, the locations of the beaches and the predicted levels of Ecoli. It is important because the most frequent cases of food poisoning occurs near the seaside. 
+
+Another data of interest ([I was poisoned](https://iwaspoisoned.com/location/united-states/illinois/chicago#botpress)) is a collection of complaints from various people that have experienced food sickness after going to a restaurant. Webscraping this website allows us to obtain a dataset of the specific restaurants that caused the complaints.
+
+
+                                        
+                                                          --- MILESTONE 2 ---
+                                        
 
 
 # Food Inspections in Chicago with Respect to Food Poisoning
