@@ -112,11 +112,11 @@ def GBT_classification(X_train, y_train, X_test, y_test, tscv, ratio = None, sco
     # Cross validation schema
     cv_schema = tscv
 
-    # hyper parameter and range of optimization
+    # Hyper parameter and range of optimization
     tuning_param = 'XGB_clf__n_estimators'
     tuning_param_range = [int(i) for i in np.linspace(10.0, 30.0, 5)]
 
-    # hyper parameter tuning
+    # Hyper parameter tuning
     train_scores_val, cv_scores_val = validation_curve(
         gb_pipe, X_train, y_train, param_name = tuning_param, param_range = tuning_param_range,
         cv = cv_schema, scoring = score, n_jobs = -1)
@@ -145,7 +145,7 @@ def GBT_classification(X_train, y_train, X_test, y_test, tscv, ratio = None, sco
 
 def plot_confusion_matrix(y_true, y_pred, classes, title=None, cmap=plt.cm.Blues, figsize=(6,6)):
     """
-    compute and plot the confusion matrix.
+    Compute and plot the confusion matrix.
     
     Parameters
     ----------
@@ -154,7 +154,7 @@ def plot_confusion_matrix(y_true, y_pred, classes, title=None, cmap=plt.cm.Blues
         respectively
     
     classes: list of strings
-        labels for of the class
+        labels of the class
     
     Returns
     --------
