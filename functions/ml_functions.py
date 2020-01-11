@@ -158,6 +158,7 @@ def plot_confusion_matrix(y_true, y_pred, classes, title=None, cmap=plt.cm.Blues
     
     Returns
     --------
+    Confusion matrix plot
     """
     
     # Compute the confusion matrix
